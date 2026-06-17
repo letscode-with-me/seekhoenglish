@@ -25,6 +25,6 @@ export default function Header() {
                     Quick Enquiry
                 </Link>
             </div>
-        </header>
-    )
+
+            )
 }

@@ -1,8 +1,13 @@
 import React from 'react'
+const feature = [
+    {
+
+    }
+]
 
 export default function Card() {
     return (
-        <div>
+        <div className="card">
 
         </div>
     )

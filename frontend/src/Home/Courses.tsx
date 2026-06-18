@@ -37,7 +37,7 @@ export default function Courses() {
     return (
         <section className='md:max-w-[80%] md:mx-auto w-full p-5'>
             <h1 className='text-3xl  text-blue-700 font-bold text-center'>Our Popular Courses</h1>
-            <div className='p-5'>
+            <div className='p-5 md:flex gap-6'>
                 {courses.map((item, index) => (
                     <Card key={index} icon={item.icon}
                         title={item.title} description={item.description}

@@ -4,11 +4,11 @@ import Image from 'next/image'
 export default function Hero2() {
     return (
         <section className='md:max-w-[80%] md:mx-auto w-full p-5 '>
-            <div className='md:flex'>
-                <div className='md:w-1/2'>
-                    <Image src="/images/learn-english.png" alt="learn english" width={500} height={500} />
+            <div className='md:flex h-full gap-15 '>
+                <div className='md:w-[45%]  rounded-xl shadow-xl h-[70vh] bg-[url(/images/learn-english.png)] bg-cover bg-center'>
+
                 </div>
-                <div className='md:w-1/2'>
+                <div className='md:w-full '>
                     <h2 className='text-2xl md:text-4xl font-bold pt-2 text-blue-600'>Why choose Seekho English?</h2>
                     <p className='py-2'>Seekho English is Saket’s most trusted institute for practical, interactive, and result-driven
                         English speaking classes. Our mission is to empower students, professionals, and homemakers to

@@ -1,5 +1,37 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import Card from "@/Components/Card"
+import { Award, MessagesSquare, Users } from 'lucide-react'
+const feature = [
+    {
+        icon: <MessagesSquare />,
+        title: "Speak Fluent in 90Days",
+        description: "Intensive practice for fast results",
+        borderColor: "border-red-500"
+    },
+    {
+        icon: <MessagesSquare />,
+        title: "Online + Offline Classes",
+        description: "Flexible learning modes for everyone",
+        borderColor: "border-blue-500"
+
+    },
+    {
+        icon: <MessagesSquare />,
+        title: "Flexible Timings",
+        description: "Morning, evening & weekend batches",
+        borderColor: "border-green-500"
+    },
+    {
+        icon: <MessagesSquare />,
+        title: "Experienced Trainers",
+        description: "Learn from certified language experts",
+        borderColor: "border-yellow-500"
+
+    }
+]
+
 
 export default function Hero2() {
     return (
@@ -17,10 +49,31 @@ export default function Hero2() {
                         just about grammar or vocabulary — it's about building confidence, clarity, and effective communication in
                         real-life situations.
                     </p>
-                    <div className="">
+                    <div className="md:flex gap-6 py-5 px-2">
 
+                        {feature.map((item, index) => (
+                            <Card key={index} icon={item.icon}
+                                title={item.title} description={item.description} borderColor={item.borderColor} />
+                        ))}
                     </div>
+                    <div className="flex gap-5 flex-wrap py-3 gap:2 
+                    items-center justify-center  rounded-lg shadow-2xl">
+                        <div className="flex  items-center ">
+                            <Users />
+                            <h2 className="font-bold">18,00+ Students</h2>
+                        </div>
 
+
+
+                        <div className="flex">
+                            <Award />
+                            <h2 className='font-bold'>10+ Years Experience</h2>
+                        </div>
+                        <div className='flex'>
+                            <Award />
+                            <h2 className='font-bold'>4.9/5 Rating</h2>
+                        </div>
+                    </div>
 
                 </div>
             </div>

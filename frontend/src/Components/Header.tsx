@@ -12,7 +12,7 @@ export default function Header() {
                 <ul className='flex gap-10'>
                     <Link href="/" className='text-red-600'><li>Home</li></Link>
                     <Link href="/courses" className='text-blue-800'><li className='flex items-center gap-1'>Courses <ChevronDown /></li></Link>
-                    <Link href="/about" className='text-blue-800' ><li>About Us </li></Link>
+                    <Link href="/about-us" className='text-blue-800' ><li>About Us </li></Link>
                     <Link href="/contact" className='text-blue-800'><li>Contact Us </li></Link>
                     {/* <li className='flex items-center gap-1 bg-amber-200'>
                     <Mail />
